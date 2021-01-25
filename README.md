@@ -13,8 +13,11 @@ this solution developed using, <br>
 ## Instalation
 <i>make sure you have install npm on your machine</i><br>
 To run the test<br>
-<b>npm run test</b>,<br>
-
+```
+npm run test
+```
+# Test Result 
+```
  checkout test
     ✓ checkout product with sku IP12PM9 and should return a free 20W Apple USB-C Power Adapter
 
@@ -23,9 +26,9 @@ To run the test<br>
 
   checkout test
     ✓ Buying more than 3 HomePod mini($99) will have a 10% discount on all HomePod mini
-
+```
 To run the service<br>
-<b>npm run start</b>,<br>
+```npm run start```
 
 
 #GraphQL schema<br>
