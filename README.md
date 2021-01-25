@@ -59,3 +59,10 @@ type Query {
   checkout(orderRequest: [OrderRequest]!): Order
 }
 ```
+
+# Access API
+```
+curl --location --request POST 'http://localhost:4000/graphql' \
+--header 'Content-Type: application/json' \
+--data-raw '{"query":"query checkout ($orderRequest: [OrderRequest]!) {\n    checkout (orderRequest: $orderRequest) {\n        item {\n            sku\n            name\n            price\n        }\n        originalPrice\n        totalPrice\n        discount {\n            type\n            amount\n            desc\n            item\n        }\n    }\n}","variables":{"orderRequest":[{"sku":"IP12PM9","qty":1}]}}'
+```
