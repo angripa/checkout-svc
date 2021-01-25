@@ -1,0 +1,30 @@
+{
+  "name": "checkout-svc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js > app.log 2>&1",
+    "test": "mocha test/checkout.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angripa/checkout-svc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/angripa/checkout-svc/issues"
+  },
+  "homepage": "https://github.com/angripa/checkout-svc#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-graphql": "^0.12.0",
+    "graphql": "^15.4.0",
+    "graphql-tools": "^2.24.0"
+  },
+  "devDependencies": {
+    "mocha": "^8.2.1",
+    "request": "^2.88.2"
+  }
+}
